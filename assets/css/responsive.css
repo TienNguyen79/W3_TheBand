@@ -1,0 +1,89 @@
+/* PC >=1024px */
+@media (min-width: 64em){
+    
+}
+/* Tablet & Mobile <1023px*/
+@media (max-width: 63.9375em){
+    .place-buy-btn{
+        padding: 15px 16px;
+    }
+    #nav .subnav a{
+        padding: 5px 12px;
+    }
+    .contact-form .form-control{
+        padding: 15px;   
+    }
+    #footer .socials-list a{
+        margin: 0 8px;
+    }
+    #footer .coppyright a{
+        padding: 12px 0;
+        display: inline-block; /*Đẩy nó xuống một ít*/
+    }
+}
+
+/* Tablet >=740 and <1024px*/
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .contact-info{
+        line-height: 2;
+    }
+    #footer .socials-list{
+        font-size: 48px;
+    }
+    #footer .coppyright{
+        font-size: 27px;
+    }
+}
+/* Mobile <740px */
+@media (max-width: 46.1875em){
+    .s-full-width,
+    .s-col-full{
+        width: 100% !important; /*Để cho các place-list rơi xuống*/
+    }
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+    #header{
+        
+        overflow: hidden;/*Khi con của nó vượt quá phạm vi nó sẽ ẩn đi*/
+    }
+    #header .mobile-menu-btn{
+
+        display: block; /*Để hiện lên nút ti-menu trên mobile*/
+    }
+
+    #header .search-btn{
+        display: none; /* Ẩn nút kính lúp */
+    }
+    #nav{
+        display: block;   /*Để bấm đc vào tất cả chiều ngang của các nút nav
+        khi đó ti-menu bị rụng xuống nên phải dùng position: absolute;*/
+    }
+    #nav>li{ 
+        display: block; /*Cho các nav dụng xuống*/
+    }
+    #nav li a{
+        padding: 1px 24px;
+    }
+    #nav >li:first-child{ /*Lấy ra con đầu tiên*/
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: inherit; /*Đây là giá trị mặc định nó sẽ bỏ đi position:absolute;
+        ở trên pc chỉ hiện lên ở mobile*/
+        background-color: #333;
+       
+    }
+    #nav .subnav a{
+        color: white;
+        padding: 5px 44px;
+    }
+    
+    #content .member-img{
+        width: 60%;
+    }
+
+    .contact-form{
+        margin-top: 32px;
+    }
+} 
